@@ -26,12 +26,12 @@ const handleSubmit=(e)=>{
     <div className='loginPage'>
       <h1>Login Page</h1>
       {submitted ? (
-        <div>
+        <div className='valid'>
           <p>Welcome {username}!</p>
         </div>
       ):(
       <form onSubmit={handleSubmit}>
-        {error && <p>{error}</p>}
+        {error && <p className='error'>{error}</p>}
         <div className='username'>
       <label htmlFor='username'>Username:</label>
       <input type='text' id='username' value={username} placeholder='username' onChange={(e)=>setUsername(e.target.value)} required/>

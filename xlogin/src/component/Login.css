@@ -7,6 +7,12 @@ h1{
 .password{
     font-family: 'Times New Roman', Times, serif;
 }
+.error{
+    font-family: 'Times New Roman', Times, serif;
+}
+.valid{
+    font-family: 'Times New Roman', Times, serif;
+}
 
 .loginPage{
     margin: 2px;
