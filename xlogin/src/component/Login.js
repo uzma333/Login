@@ -15,7 +15,7 @@ const handleSubmit=(e)=>{
     setError("");
     isSubmitted(true);
   }else{
-    setError("Invalid user name or password");
+    setError("Invalid username or password");
     isSubmitted(false);
   }
 
@@ -27,7 +27,7 @@ const handleSubmit=(e)=>{
       <h1>Login Page</h1>
       {submitted ? (
         <div className='valid'>
-          <p>Welcome {username}!</p>
+          <p>Welcome, {username}!</p>
         </div>
       ):(
       <form onSubmit={handleSubmit}>
